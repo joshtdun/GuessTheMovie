@@ -36,13 +36,15 @@ public class Game {
         //start message
         System.out.println("Lets play a game called Guess The Movie Title");
         help();
-        System.out.println("Are you ready to play? Type \"start\" and press the enter button to start if at any time you need help enter \"-h\" to display this message again.");
+        System.out.println("Are you ready to play? Type \"start\" and press the enter button to start or type \"quit\" to quit.");
         Scanner input = new Scanner(System.in);
         String gameStart = input.nextLine();
         String gameStartLower = gameStart.toLowerCase();
         //makes sure that only start is entered if not then it will prompt the user again.
         if (gameStartLower.contains("start")) {
 
+        }else if(gameStartLower.contains("quit")){
+          System.exit(0);
         } else {
             startMessage();
         }
