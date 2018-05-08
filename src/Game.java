@@ -35,9 +35,7 @@ public class Game {
     private static void startMessage() {
         //start message
         System.out.println("Lets play a game called Guess The Movie Title");
-        System.out.println("The rules are simple You will be shown a Movie Title with all letters changed to a *");
-        System.out.println("You will then have 10 tries to guess all the letters in the title.");
-        System.out.println("If you guess incorrectly it will count against your turns.  If you run out of turns you LOOSE.");
+        help();
         System.out.println("Are you ready to play? Type \"start\" and press the enter button to start if at any time you need help enter \"-h\" to display this message again.");
         Scanner input = new Scanner(System.in);
         String gameStart = input.nextLine();
